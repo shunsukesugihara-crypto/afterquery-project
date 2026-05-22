@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #fde68a;
+  color: #1e1b4b;
+}
+
+.highlight-a {
+  background-color: #bfdbfe;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.highlight-b {
+  background-color: #ddd6fe;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.response-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  cursor: text;
+  user-select: text;
+}
+
+.rating-btn {
+  @apply w-9 h-9 rounded border text-sm font-semibold transition-all duration-100;
+  @apply border-slate-300 text-slate-500 hover:border-slate-400 hover:text-slate-700;
+}
+
+.rating-btn.selected-a {
+  @apply bg-blue-600 border-blue-600 text-white hover:bg-blue-700 hover:border-blue-700;
+}
+
+.rating-btn.selected-b {
+  @apply bg-violet-600 border-violet-600 text-white hover:bg-violet-700 hover:border-violet-700;
+}
+
+.winner-btn {
+  @apply px-6 py-3 rounded-lg border-2 text-sm font-bold tracking-wide transition-all duration-150;
+}
+
+.winner-btn.winner-a {
+  @apply border-blue-300 text-blue-700 hover:bg-blue-50;
+}
+
+.winner-btn.winner-a.active {
+  @apply bg-blue-600 border-blue-600 text-white;
+}
+
+.winner-btn.winner-tie {
+  @apply border-slate-300 text-slate-600 hover:bg-slate-50;
+}
+
+.winner-btn.winner-tie.active {
+  @apply bg-slate-700 border-slate-700 text-white;
+}
+
+.winner-btn.winner-b {
+  @apply border-violet-300 text-violet-700 hover:bg-violet-50;
+}
+
+.winner-btn.winner-b.active {
+  @apply bg-violet-600 border-violet-600 text-white;
+}
