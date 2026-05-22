@@ -1,4 +1,4 @@
-# AfterQuery Data Capture Engine
+# Data Capture Engine
 
 A fully containerized RLHF (Reinforcement Learning from Human Feedback) data pipeline. Human annotators compare two model responses side-by-side, rate them across multiple axes, and submit their judgement — all captured asynchronously at high throughput via a Redis/Celery queue.
 
